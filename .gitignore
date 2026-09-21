@@ -7,3 +7,11 @@ expo-env.d.ts
 .DS_Store
 coverage
 *.log
+
+# Artefatos de build — sao gerados, nao versionados.
+# `packages/shared/dist/` e `apps/web/tsconfig.tsbuildinfo` estavam no
+# indice: alem de poluir todo diff, versionar saida de compilacao cria
+# a chance de o commit e o codigo-fonte discordarem.
+dist
+build
+*.tsbuildinfo
